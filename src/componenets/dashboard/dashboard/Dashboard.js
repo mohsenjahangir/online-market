@@ -8,18 +8,17 @@ export const Dashboard = () => {
     return (
         <div className='bg-light'>
             <Helmets title={'Home'} name={""} content={"Welcome to shop"} />
-            <nav className="navbar-expand-lg bg-light text-capitalize w-100">
-                <div>
-                    <div className="navbar-collapse d-flex flex-row">
-
+            <nav className=" text-capitalize">
+                <div> 
+                    <nav className="navbar-collapse bg-light  w-100 d-flex flex-row navbar-expand-lg" >
                         <ul className="navbar-nav   mb-lg-0">
                             <li>
                                 <Link className=' btn btn-light text-danger ' to={'/'}><h5>online market</h5></Link>
                             </li>
                         </ul>
 
-                        <input class="form-control mr-sm-2 w-50" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><FaSearch /></button>
+                        <input className="form-control mr-sm-2 w-50" type="search" placeholder="Search" aria-label="Search" />
+                        <button className="btn btn-outline-warning my-2 my-sm-0" type="submit"><FaSearch /></button>
                         <div className="navbar-collapse d-flex justify-content-end">
                             <ul className="navbar-nav  mb-lg-0">
                                 <li className="nav-item me-2">
@@ -29,13 +28,13 @@ export const Dashboard = () => {
                             </ul>
                         </div>
 
-                    </div>
-                    <div className=" bg-secondary text-capitalize">
+                    </nav>
+                    <nav className=" bg-secondary text-capitalize">
                         <div className='row'>
                         <div >
                                 <ul className="navbar-nav mb-lg-0">
                                     <li>
-                                        <select class="btn btn-secondary" name='option'>
+                                        <select className="btn btn-secondary" name='option'>
                                         <option><small>Menu</small></option>
                                         <option>mobile</option>
                                         <option>fashion</option>
@@ -50,13 +49,15 @@ export const Dashboard = () => {
                                         <Link className=' btn btn-secondary ' to={'/d'}><h6>gift cards</h6></Link>
                                         <Link className=' btn btn-secondary ' to={'/dw'}><h6>customer service</h6></Link>
                                         <Link className=' btn btn-secondary ' to={'/dq'}><h6>today's deals</h6></Link>
+                                        <Link className=' btn btn-secondary ' to={'/dq'}><h6>super market</h6></Link>
+                                        <Link className=' btn btn-secondary ' to={'/dqs'}><h6>do you have any question?</h6></Link>
                                         
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
-                    </div>
+                    </nav>
                 </div>
             </nav>
         </div>
