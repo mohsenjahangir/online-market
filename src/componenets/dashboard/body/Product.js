@@ -4,7 +4,7 @@ import { InitialProducts } from '../../../data/Data'
 import { FaCartPlus } from 'react-icons/fa'
 import { ModalSet } from '../../../modal/ModalSet'
 import { Cart } from '../cart/Cart'
-import { Carsouel } from '../carsouel/Carsouel'
+import { Carsouel } from './Carsouel'
 import './carsouel.css'
 export const Product = () => {
   const [products, setProducts] = useState([...InitialProducts])
@@ -34,7 +34,7 @@ export const Product = () => {
                   </div>
                   <div className='d-grid gap-2 d-md-flex justify-content-md-end m-2'>
                     <div typeof='submit' >
-                      <button  onClick={() => add(item.id)}><ModalSet /></button>
+                      <button onClick={() => add(item.id)}><ModalSet /></button>
                     </div>
                   </div>
                 </div>

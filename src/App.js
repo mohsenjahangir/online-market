@@ -11,6 +11,7 @@ import { AboutUS } from './componenets/dashboard/about-us/AboutUS';
 import { Login } from './componenets/dashboard/login/Login';
 import { Toasts } from '../src/toast/Toasts';
 import { Home } from './componenets/dashboard/home/Home';
+import { Weather } from './componenets/dashboard/weather/Weather';
 
 
 function App() {
@@ -18,14 +19,15 @@ function App() {
     <StrictMode>
       <Toasts />
       <BrowserRouter>
-        <Home />
+        <Dashboard/>
         <Routes>
           <Route path='/Body' element={<Body />} />
           <Route path='/*' element={<Default />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/' />
+          <Route path='/' element={<Home/>}/>
           <Route path='/about-us' element={<AboutUS />} />
+          <Route path='/weather' element={<Weather />} />
         </Routes >
       </BrowserRouter>
 
