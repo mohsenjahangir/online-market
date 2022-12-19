@@ -1,26 +1,21 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { InitialProducts } from '../../../data/Data'
+import { mostviews } from '../../../data/Data'
 import { FaCartPlus } from 'react-icons/fa'
 import { ModalSet } from '../../../modal/ModalSet'
 import { Cart } from '../cart/Cart'
 import { Carsouel } from './Carsouel'
 import './carsouel.css'
 export const Product = () => {
-  const [products, setProducts] = useState([...InitialProducts])
-  const [items, setItems] = useState()
-  const add = (item) => {
-    setItems([items, item])
-    console.log(item)
 
-  }
   return (
     <>
-      <div className='scrollbar scrollbar-primary'>
-        <div className=' text-capitalize m-2 scrollbar '>
+      <div className='scrollbar text-capitalize scrollbar-primary'>
+        <h1 className='text-center'>most views</h1>
+        <div className=' m-2 scrollbar '>
           {/* <div className='text-center blockquote-footer'><h1 >our products</h1></div> */}
           <div className="row m-1 row-cols-1 row-cols-md-5 g-4">
-            {products.map((item) =>
+            {mostviews.map((item) =>
               <div className="col" key={item.id}>
                 <div className="card h-100">
                   <div className="bg-image hover-overlay hover-zoom hover-shadow ripple"><img className='card-img-top' key={item.id} src={item.imge} />
@@ -34,7 +29,7 @@ export const Product = () => {
                   </div>
                   <div className='d-grid gap-2 d-md-flex justify-content-md-end m-2'>
                     <div typeof='submit' >
-                      <button onClick={() => add(item.id)}><ModalSet /></button>
+                      <button ><ModalSet /></button>
                     </div>
                   </div>
                 </div>
