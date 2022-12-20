@@ -12,6 +12,8 @@ import { Login } from './componenets/dashboard/login/Login';
 import { Toasts } from '../src/toast/Toasts';
 import { Home } from './componenets/dashboard/home/Home';
 import { Weather } from './componenets/dashboard/weather/Weather';
+import { Footer } from '../src/componenets/dashboard/footer/Footer'
+import { Back } from './componenets/dashboard/back-to-top/Back';
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
       <Toasts />
       <BrowserRouter>
         <Dashboard/>
+        
         <Routes>
           <Route path='/Body' element={<Body />} />
           <Route path='/*' element={<Default />} />
@@ -29,8 +32,8 @@ function App() {
           <Route path='/about-us' element={<AboutUS />} />
           <Route path='/weather' element={<Weather />} />
         </Routes >
+        <Footer/>
       </BrowserRouter>
-
     </StrictMode>
   );
 
