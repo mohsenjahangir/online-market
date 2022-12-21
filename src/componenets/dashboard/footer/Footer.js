@@ -1,11 +1,15 @@
 import React from 'react'
 import { CDBFooter, CDBFooterLink, CDBBtn, CDBIcon, CDBBox, CDBContainer } from 'cdbreact';
 
+
 export const Footer = () => {
     return (
         <CDBFooter className="shadow bg-secondary text-capitalize">
+            
             <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
+                
                 <CDBBox display="flex" justifyContent="between" className="flex-wrap">
+                    
                     <CDBBox>
                         <a href="/" className="d-flex align-items-center p-0 text-dark">
                             {/* <img alt="logo" src="logo" width="30px" /> */}

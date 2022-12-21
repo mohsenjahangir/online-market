@@ -7,6 +7,7 @@ import '../dashboard/dashboard.css'
 export const Dashboard = () => {
     return (
         <div className='bg-light  '>
+            
             <Helmets title={'Home'} name={""} content={"Welcome to shop"} />
             <nav className=" text-capitalize ">
                 <div>
