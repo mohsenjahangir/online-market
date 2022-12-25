@@ -1,7 +1,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { FaArrowCircleRight } from 'react-icons/fa'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { brands } from '../../../data/Data'
+
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';

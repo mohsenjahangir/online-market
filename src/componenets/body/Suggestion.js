@@ -1,5 +1,5 @@
 import React from 'react'
-import { suggestion } from '../../../data/Data'
+import { suggestion } from '../../data/Data'
 
 export const Suggestion = () => {
     return (

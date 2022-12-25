@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { GrLinkTop } from 'react-icons/gr'
+import '../back-to-top/scrollbutton.css'
 
 export default function ScrollButton() {
   useEffect(() => {
@@ -8,7 +9,7 @@ export default function ScrollButton() {
   }, []);
 
   return (
-    <div>
+    <div >
       <div style={{ height: '' }} />
 
       {/* 👇️ scroll to top on button click */}

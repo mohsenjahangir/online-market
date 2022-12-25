@@ -1,18 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Dashboard } from './componenets/dashboard/dashboard/Dashboard';
+import { Dashboard } from './componenets/dashboard/Dashboard';
 import { StrictMode } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Body } from './componenets/dashboard/body/Body';
-import { Default } from './componenets/dashboard/default/Default';
-import { Cart } from './componenets/dashboard/cart/Cart';
-import { AboutUS } from './componenets/dashboard/about-us/AboutUS';
-import { Login } from './componenets/dashboard/login/Login';
+import { Body } from './componenets/body/Body';
+import { Default } from './componenets/default/Default';
+import { Cart } from './componenets/cart/Cart';
+import { AboutUS } from './componenets/about-us/AboutUS';
+import { Login } from './componenets/login/Login';
 import { Toasts } from '../src/toast/Toasts';
-import { Home } from './componenets/dashboard/home/Home';
-import { Weather } from './componenets/dashboard/weather/Weather';
-import { Footer } from '../src/componenets/dashboard/footer/Footer'
+import { Home } from './componenets/home/Home';
+import { Weather } from './componenets/weather/Weather';
+import { Footer } from '../src/componenets/footer/Footer'
 import ScrollButton from './back-to-top/ScrollButton';
 
 

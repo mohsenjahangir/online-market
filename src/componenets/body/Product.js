@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { mostviews } from '../../../data/Data'
-import { FaCartPlus } from 'react-icons/fa'
-import { ModalSet } from '../../../modal/ModalSet'
-import { Cart } from '../cart/Cart'
-import { Carsouel } from './Carsouel'
-import './carsouel.css'
+
+import { mostviews } from '../../data/Data'
+
+import { ModalSet } from '../../modal/ModalSet'
+
+
 export const Product = () => {
 
   return (
@@ -29,7 +28,7 @@ export const Product = () => {
                   </div>
                   <div className='d-grid gap-2 d-md-flex justify-content-md-end m-2'>
                     <div typeof='submit' >
-                      <button ><ModalSet /></button>
+                      <button className='btn btn-primary p-1'  ><ModalSet /></button>
                     </div>
                   </div>
                 </div>
