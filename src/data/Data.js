@@ -9,6 +9,7 @@ export const mostviews =
         incart: false,
         count: 0,
         total: 0,
+        empty:'empty'
     },
     {
         id: 2,

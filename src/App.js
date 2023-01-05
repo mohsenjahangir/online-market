@@ -31,12 +31,12 @@ function App() {
         
         <Routes>
           <Route path='/Body' element={<Body />} />
-          <Route path='/*' element={<Default />} />
           <Route path='/cart' element={<Cart />} />
-          <Route path='/login' element={<Login />} />
           <Route path='/' element={<Home/>}/>
+          <Route path='/login' element={<Login />} />z
           <Route path='/about-us' element={<AboutUS />} />
           <Route path='/weather' element={<Weather />} />
+          <Route path='/*' element={<Default />} />
         </Routes >
        
         <Footer/>
