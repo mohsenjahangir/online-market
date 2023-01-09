@@ -4,6 +4,7 @@ import { CgLogIn, CgUserAdd } from "react-icons/cg";
 import { Link } from 'react-router-dom';
 import { Helmets } from '../../helmet/Helmets'
 import '../dashboard/dashboard.css'
+import { TotalItems } from '../cart/TotalItems';
 export const Dashboard = () => {
     return (
         <div className='bg-light text-capitalize '>
@@ -56,7 +57,6 @@ export const Dashboard = () => {
                                             <Link className=' btn btn-secondary ' to={'/dq'}><h6>super market</h6></Link>
                                             <Link className=' btn btn-secondary ' to={'/dqs'}><h6>do you have any question?</h6></Link>
                                             <Link className=' btn btn-secondary ' to={'/weather'}><h6>weather</h6></Link>
-
                                         </li>
                                     </ul>
                                 </div>

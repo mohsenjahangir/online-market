@@ -3,6 +3,7 @@ import { React, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { mostviews } from '../../data/Data'
 import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
+import { TotalItems } from './TotalItems';
 
 
 export const Cart = () => {
@@ -71,7 +72,7 @@ export const Cart = () => {
         </div>
         <div className='col mt-5 h-100'>
           <div className='card w-50 h-25 bg-light mt-2'>
-            <h4 className='p-3 text-secondary'>total items:{totalItemCount}</h4>
+            <h4 className='p-3 text-secondary'>total items:<TotalItems totalItemCount={totalItemCount}/></h4>
             <h4 className='p-3 text-danger'>discount:0$</h4>
           </div>
         </div>
