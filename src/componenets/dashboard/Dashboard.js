@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Helmets } from '../../helmet/Helmets'
 import '../dashboard/dashboard.css'
 import { TotalItems } from '../cart/TotalItems';
+import { Lan } from './Lan';
 export const Dashboard = () => {
     return (
         <div className='bg-light text-capitalize '>
@@ -13,26 +14,25 @@ export const Dashboard = () => {
             <nav className=" text-capitalize ">
                 <div>
                     <div className='fixed-top'>
-                        <nav className="navbar-collapse bg-light  w-100 d-flex flex-row navbar-expand-lg" >
-                            <ul className="navbar-nav   mb-lg-0">
+                        <nav className="navbar-collapse bg-light d-flex flex-row navbar-expand-lg" >
+                            <ul className="navbar-nav mb-lg-0">
                                 <li>
                                     <Link className=' btn btn-light text-danger ' to={'/'}><h5>online market</h5></Link>
                                 </li>
                             </ul>
-
                             <input className="form-control mr-sm-2 w-50" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-warning my-2 my-sm-0" type="submit"><FaSearch /></button>
+                            <button className="btn btn-outline-warning my-2 my-sm-0 mx-1" type="submit"><FaSearch /></button>
+                            <Lan/>
                             <div className="navbar-collapse d-flex justify-content-end">
                                 <ul className="navbar-nav  mb-lg-0">
                                     <li className="nav-item me-2">
-                                        <Link className="btn btn-light mx-2 ml-auto" to={'/login'}><h5><CgLogIn /><small>login</small>|<small>sign up</small></h5></Link>
-                                        <Link className="btn btn-outline-warning ml-auto" to={'/cart'}><h5><FaShoppingCart /></h5></Link>
+                                        <Link className="btn btn-light " to={'/login'}><h5><CgLogIn /><small>login</small>|<small>sign up</small></h5></Link>
+                                        <Link className="btn btn-outline-warning " to={'/cart'}><h5><FaShoppingCart /></h5></Link>
                                     </li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
-
                     <div className=''>
                         <nav className=" mt-5 pt-2 bg-secondary text-capitalize">
                             <div className='row'>

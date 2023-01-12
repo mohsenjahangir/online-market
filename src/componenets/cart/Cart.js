@@ -2,8 +2,8 @@
 import { React, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { mostviews } from '../../data/Data'
-import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
 import { TotalItems } from './TotalItems';
+
 
 
 export const Cart = () => {
@@ -38,6 +38,7 @@ export const Cart = () => {
   return (
     <>
       <Helmet title={'Cart'} name={""} content={""} />
+      
       <div className=' text-capitalize row'>
         <div className='col'>
           {items.map((item, index) =>
